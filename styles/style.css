@@ -5,7 +5,7 @@
 }
 
 *:focus {
-  outline: none !important;
+  outline: none;
 }
 
 html {
@@ -56,7 +56,7 @@ ol {
 }
 
 .content {
-  margin: 133px 30px 0px;
+  margin: 30px 0px;
   display: flex;
   gap: 30px;
 }
@@ -87,7 +87,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Arial,  sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -103,7 +103,7 @@ ol {
   border-bottom: 1px solid white;
   min-width: 225px;
   color: rgba(255, 255, 255, 0.70);
-  font-family: "Fira Sans Condensed";
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -111,7 +111,6 @@ ol {
 }
 
 .search-form__checkbox-list {
-  width: 212px;
   margin-top: 6px;
   margin-bottom: 4px;
   display: flex;
@@ -155,9 +154,6 @@ fieldset {
 
 .content__accent {
   color: #545050;
-  text-align: center;
-  line-height: 70.5px;
-  font-size: 75px;
 }
 
 .content__list {
@@ -167,6 +163,8 @@ fieldset {
   overflow-y: scroll;
   height: 295px;
   gap: 30px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .content__card-link {
@@ -232,23 +230,22 @@ fieldset {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  height: 34px;
 }
 
 .search-form__submit-button {
-  height: 34px;
   width: 194px;
   margin-top: 20px;
 }
 
 .more-button {
-  height: 34px;
   width: 399px;
 }
 
 /* focus */
 
 .search-form__label:focus {
-  outline: none !important;
+  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -256,7 +253,7 @@ fieldset {
   outline-offset: 1px;
 }
 
-.content__list-item:focus {
+.content__card-link:focus {
   outline: none;
 }
 
