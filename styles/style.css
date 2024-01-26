@@ -164,10 +164,13 @@ fieldset {
   overflow-y: scroll;
   max-height: 295px;
   gap: 30px;
-  padding-top: 2px;
   padding-left: 2px;
   padding-right: 2px;
   width: 420px;
+}
+
+.content__list-item:first-child {
+  margin-top: 2px;
 }
 
 .content__card-link {
