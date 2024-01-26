@@ -13,7 +13,7 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
+  inline-size: 1183px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -51,12 +51,13 @@ ol {
   white-space: nowrap;
 }
 
-.main {
-  min-height: 1200px;
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .content {
-  margin: 30px 0px;
   display: flex;
   gap: 30px;
 }
@@ -161,19 +162,22 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
-  height: 295px;
+  max-height: 295px;
   gap: 30px;
   padding-left: 2px;
   padding-right: 2px;
+  width: 420px;
 }
 
 .content__card-link {
+  background-color: initial;
+  display: block;
   text-decoration: none;
 }
 
 .content__video-card {
   display: flex;
-  width: 398px;
+  width: 394px;
   min-height: 107px;
   padding: 2px;
   text-overflow: ellipsis;
@@ -253,29 +257,31 @@ fieldset {
   outline-offset: 1px;
 }
 
-.content__card-link:focus {
+button:focus {
   outline: none;
 }
 
-.content__list-item:has(:focus-visible) {
-  outline: 1px solid white;
-  outline-offset: 1px;
-}
-
-button:focus {
-  outline: none !important;
-}
-
 .button:focus-visible {
-  outline: 1px solid #FFFFFF !important;
+  outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
 
 .more-button:focus-visible {
-  outline: 1px solid #FFFFFF !important;
+  outline: 1px solid #FFFFFF;
   outline-offset: 1px;
   margin: 2px;
   width: calc(399px - 4px);
+}
+
+.content__card-link:focus {
+  background-color: #545050;
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  background-color: initial;
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 /* hover */
@@ -288,8 +294,9 @@ button:focus {
   text-decoration: underline;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
+  color: white;
 }
 
 /* active */
@@ -304,7 +311,7 @@ button:focus {
   background-color: #545050;  
 } 
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;  
 }
 
