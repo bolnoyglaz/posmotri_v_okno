@@ -278,12 +278,10 @@ button:focus {
 }
 
 .content__card-link:focus {
-  background-color: #545050;
   outline: none;
 }
 
 .content__card-link:focus-visible {
-  background-color: initial;
   outline: 1px solid white;
   outline-offset: 1px;
 }
@@ -321,4 +319,8 @@ button:focus {
 
 input[type='checkbox']:checked + span {
   background-color: white;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
